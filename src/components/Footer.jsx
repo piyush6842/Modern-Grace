@@ -76,7 +76,7 @@ const Footer = () => {
       
       {/* Footer Copyright */}
       <div className={`mt-10 text-center ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-        <p>© 2024, Made with 💗 by <strong>Manish</strong></p>
+        <p>© 2024, Made with 💗 by <strong>Manish Gupta</strong></p>
       </div>
     </footer>
   );
