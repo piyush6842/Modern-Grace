@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import image1 from "../Images/homepageimg.avif";
-import image2 from "../Images/scenery-designers-work.avif";
-import image3 from "../Images/view-essentials-pottery-studio.avif";
-import image4 from "../Images/cozy-lively-home-interior-design.avif";
+import image1 from "../images/homepageimg.avif";
+import image2 from "../images/scenery-designers-work.avif";
+import image3 from "../images/view-essentials-pottery-studio.avif";
+import image4 from "../images/cozy-lively-home-interior-design.avif";
 import { Link } from 'react-router-dom';
 import ContentLoader from 'react-content-loader';
 
