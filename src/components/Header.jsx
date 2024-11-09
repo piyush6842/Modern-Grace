@@ -1,11 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import ThemeContext from '../components/ThemeContext'; // Import ThemeContext
+import ThemeContext from '../components/ThemeContext';
 import image1 from "../images/InteriorLogo.avif";
 
 const Header = () => {
   const location = useLocation();
-  const { theme, toggleTheme } = useContext(ThemeContext); // Access theme context
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -45,16 +45,15 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* Mobile Menu Icon */}
-        <div className='sm:hidden flex items-center'>
-          <button onClick={toggleMobileMenu} className={`text-gray-800 text-2xl ${theme === 'dark' ? 'bg-gray-950 text-white' : 'bg-gray-100'}`}>
+        {/* Right Side Controls */}
+        <div className="flex items-center space-x-4">
+          {/* Mobile Menu Icon */}
+          <button onClick={toggleMobileMenu} className={`sm:hidden text-gray-800 text-2xl ${theme === 'dark' ? 'bg-gray-950 text-white' : 'bg-gray-100'}`}>
             ☰
           </button>
-        </div>
-        
-        {/* Theme Toggle Button */}
-        <div className="flex items-center">
-          <button onClick={toggleTheme} className="ml-4 p-2 bg-gray-700 text-white rounded-full transition-colors duration-300 hover:bg-gray-600">
+
+          {/* Theme Toggle Button */}
+          <button onClick={toggleTheme} className="p-2 bg-gray-700 text-white rounded-full transition-colors duration-300 hover:bg-gray-600">
             {theme === 'dark' ? '🌙' : '🌞'}
           </button>
         </div>
